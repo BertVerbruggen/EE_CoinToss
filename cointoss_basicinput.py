@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 def coin_toss_experiment(gain, loss, starting_capital, heads_probability, num_tosses):
     # Simulate coin tosses
-    np.random.seed(0)
+    # np.random.seed(0)
     results = np.random.choice([1, -1], size=num_tosses, p=[heads_probability, 1-heads_probability])
     cumulative_results = np.cumsum(results)
 
